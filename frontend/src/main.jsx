@@ -24,7 +24,7 @@ function PrivateRoute({ children }) {
 createRoot(document.getElementById("root")).render(
   <GoogleOAuthProvider clientId={import.meta.env.VITE_GOOGLE_CLIENT_ID || ""}>
     <AuthProvider>
-      <Router>
+      <Router basename={import.meta.env.BASE_URL}>
         <Suspense fallback={<div className="screen-loader">Loading...</div>}>
           <Routes>
             <Route path="/login" element={<Login />} />
