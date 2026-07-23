@@ -1,0 +1,24 @@
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Node
+node_modules/
+dist/
+
+# Local tooling and logs
+.vscode/
+.agents/
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
