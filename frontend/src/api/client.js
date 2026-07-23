@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const hostedDemo = window.location.hostname.endsWith(".github.io") && !import.meta.env.VITE_API_URL;
+const hostedDemo = window.location.hostname.endsWith(".github.io");
 const demoUser = {
   _id: "dev_test_user",
   id: "dev_test_user",
